@@ -1,0 +1,55 @@
+body {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.container-fluid {
+    padding: 1% 3%;
+}
+
+.nav-item {
+    padding: 0 6px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.my-image {
+    text-align: center;
+}
+
+.my-input {
+    padding: 5px;
+    width: 10rem;
+}
+
+th {
+    color: #BE1E2D;
+}

@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AI Checklist</title>
+
+<!--    Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--    CSS Stylesheets-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!--    Font Awesome-->
+    <script src="https://kit.fontawesome.com/3684a022dd.js" crossorigin="anonymous"></script>
+
+    <!--    Bootstrap Scripts (Java Script)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="static/images/AI logo.jpg" alt="AI" width="150rem" height="50rem">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search for Symbol" aria-label="Search">
+          </form>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Market</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Sectors</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Screener</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">News</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Options</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Macroeconomics</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Portfolio</a>
+              </li>
+           </ul>
+      </div>
+    </nav>
+
+    <section id="valuation-methods">
+        <div class="container-fluid">
+            <h1>Amassing Checklist & Portfolio Builder</h1>
+            <div class="dropdown-center">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Preferred Valuation Method
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">FCFF + Relative</a></li>
+                <li><a class="dropdown-item" href="#">ERM + Relative</a></li>
+                <li><a class="dropdown-item" href="#">Only FCFF</a></li>
+                <li><a class="dropdown-item" href="#">Only ERM</a></li>
+                <li><a class="dropdown-item" href="#">Only Relative</a></li>
+              </ul>
+            </div><br>
+            <table class="table table-striped table-hover table-danger">
+                  <thead class="table-light">
+                    <tr>
+                      <th scope="col">Valuation Method</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Advantages</th>
+                      <th scope="col">Disadvantages</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">FCFF Valuation</th>
+                      <td>Estimating intrinsic value based on present value of expected cash flows</td>
+                      <td>Reflects the underlying characteristics of the firm and is less influenced by market moods and perceptions. Encourages long-term investment horizons and thoughtful analysis of future cash flows.</td>
+                      <td>Requires more explicit inputs and information than other methods, and the inputs can be noisy and manipulated. Works best for assets that generate cash flows.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Excess Return Model</th>
+                      <td>Focuses on present value of expected excess returns that a firm is expected to generate in the future, in addition to the capital invested currently in the firm.</td>
+                      <td>Challenges to calculate total invested capital in financial service firms has been solved and the model differentiates between firms that earn just the fair-market rate of return on their equity investments and those that earn a below-market return</td>
+                      <td>Problem arises when we value a highly levered firm using this model.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Relative Valuation</th>
+                      <td>Estimates value of an asset by comparing it to the prices of similar or comparable assets in the market</td>
+                      <td>Reflects market perceptions and moods. Tailored to the needs of portfolio managers who are judged based on how they perform on a relative basis. Suitable for investors with short time horizons.</td>
+                      <td>Assumes that markets are correct in the aggregate. May require implicit assumptions about other variables. Works best when there are a large number of comparable assets priced in a market and a common variable can be used to standardize the price.</td>
+                    </tr>
+                  </tbody>
+              </table><br>
+            <p><strong>Free Cash Flow to Firm Model:</strong>
+FCFF valuation is a method of estimating the intrinsic value of an asset based on the present value of its expected cash flows. To use DCF, an analyst needs to estimate the asset's life, cash flows, and the discount rate. DCF valuation is less influenced by market moods and perceptions, and it forces investors to think about the underlying characteristics of the firm. However, DCF valuation requires more explicit inputs and information than other methods, and the inputs can be noisy and manipulated. It works best for assets that generate cash flows, and for investors who have a long-term horizon, are capable of providing a catalyst for price to move to value, and are not swayed by market movements.
+
+<br><br><strong>Excess Return Model:</strong>
+Excess Return Models focus on the present value of expected excess returns that a firm is expected to generate in the future, in addition to the capital invested currently in the firm. Although it is challenging to calculate the total invested capital in Financial Service firms, this model can still be applied to value equity in such firms by focusing solely on equity. The value of equity in a financial service firm can be determined by adding the equity capital invested currently to the present value of expected excess returns to equity investors from current and future investments. This model's emphasis on excess returns is noteworthy as it differentiates between firms that earn just the fair-market rate of return on their equity investments and those that earn a below-market return, which would result in their equity market value dipping below the equity capital currently invested. Additionally, this model considers expected future investments, making it necessary for the analyst using the model to forecast both where the financial service firm will direct its future investments and the expected returns on those investments.
+
+<br><br><strong>Relative Valuation:</strong>
+Relative valuation is an approach that estimates the value of an asset by comparing it to the prices of similar or comparable assets in the market. This valuation method requires an identical or similar asset, a standardized measure of value, and variables to control for differences. Relative valuation is advantageous as it reflects market perceptions and moods, and is tailored to the needs of portfolio managers who are judged based on how they perform on a relative basis. However, relative valuation assumes that markets are correct in the aggregate, and may require implicit assumptions about other variables. Relative valuation works best when there are a large number of comparable assets priced in a market and a common variable can be used to standardize the price. This approach is suitable for investors with short time horizons, who are judged based on a relative benchmark and can take actions to exploit relative mispricing.</p>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section id="risk-tolerance">
+        <div class="container-fluid">
+              <div class="dropdown-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Risk Tolerance
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Low</a></li>
+                    <li><a class="dropdown-item" href="#">Medium</a></li>
+                    <li><a class="dropdown-item" href="#">High</a></li>
+                </ul>
+              </div><br>
+              <table class="table table-striped table-hover table-danger">
+                  <thead class="table-light">
+                    <tr>
+                      <th scope="col">Risk Tolerance</th>
+                      <th scope="col">Scenario</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Valuation Approach</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">High</th>
+                      <td>Best Case</td>
+                      <td>Positive outcome scenario</td>
+                      <td>Higher growth rate applied to reflect potential higher returns</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Medium</th>
+                      <td>Base Case</td>
+                      <td>More realistic scenario</td>
+                      <td>Growth rate applied based on average risk/return expectations</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Low</th>
+                      <td>Worst Case</td>
+                      <td>Negative outcome scenario</td>
+                      <td>Lower growth rate applied to reflect higher risk</td>
+                    </tr>
+                  </tbody>
+              </table><br>
+              <p>Risk tolerance refers to the degree of uncertainty or variability that an investor or a company is willing to accept in their investment decisions. When considering the best, base, and worst cases in valuation, risk tolerance is a crucial factor that affects the valuation approach.
+
+In general, the best, base, and worst cases refer to different scenarios that may occur in the future. These scenarios are typically based on different assumptions, such as different levels of economic growth, interest rates, or market conditions. The best case assumes a positive outcome, while the worst case assumes a negative outcome. The base case is typically a more realistic scenario that falls somewhere between the best and worst cases.
+
+When valuing a company or investment in the context of best, base, and worst cases, the risk tolerance of the investor or company will affect the valuation approach. A more risk-averse investor or company may place more weight on the worst-case scenario and apply a higher discount rate to reflect the higher risk associated with that scenario. On the other hand, a more risk-tolerant investor or company may place more weight on the best-case scenario and apply a lower discount rate to reflect the potentially higher returns associated with that scenario.
+
+In practice, the approach to valuing a company or investment in the context of best, base, and worst cases will depend on the specific circumstances of the investment and the preferences of the investor or company. A thorough analysis of the potential risks and rewards associated with each scenario is essential to arrive at a fair and accurate valuation that reflects the investor or company's risk tolerance.</p>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section id="investment-horizon">
+      <div class="container-fluid">
+          <div class="dropdown-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Investment Horizon
+            </button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Current</a></li>
+            <li><a class="dropdown-item" href="#">Short Term (Less Than 2 Years)</a></li>
+            <li><a class="dropdown-item" href="#">Medium Term (2 to 5 Years)</a></li>
+            <li><a class="dropdown-item" href="#">Long Term (Greater Than 5 Years)</a></li>
+            </ul>
+          </div><br>
+          <p>***Note: "Negative" in the table indicates that the investment returns are expected to be negative, while "Positive" indicates that the investment returns are expected to be positive.</p>
+          <table class="table table-striped table-hover table-danger">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Investment Horizon</th>
+                  <th scope="col">Low Cost of Equity and Overvalued</th>
+                  <th scope="col">Low Cost of Equity and Undervalued</th>
+                  <th scope="col">High Cost of Equity and Overvalued</th>
+                  <th scope="col">High Cost of Equity and Undervalued</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Short Term (Less than 2 years)</th>
+                  <td>Negative</td>
+                  <td>Positive</td>
+                  <td>Negative</td>
+                  <td>Positive</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mid Term (2 to 5 years)</th>
+                  <td>Negative</td>
+                  <td>Positive</td>
+                  <td>Negative</td>
+                  <td>Positive</td>
+                </tr>
+                <tr>
+                  <th scope="row">Long Term (Greater Than 5 Years)</th>
+                  <td>Negative</td>
+                  <td>Positive</td>
+                  <td>Positive</td>
+                  <td>Positive</td>
+                </tr>
+              </tbody>
+          </table><br>
+          <p>We generally set the investment horizon based on the Valuation Methods outcome and the Cost of Equity:<br><br>
+              <strong>Low cost of equity and overvalued:</strong> This scenario is potentially risky for investors as the asset is overvalued, meaning its current market price is higher than its intrinsic value. However, the low cost of equity could provide a boost to returns in the short term, as investors may be willing to pay a premium for the asset due to low interest rates. Over the long term, the asset's overvaluation could lead to a price correction, resulting in lower returns for investors.
+
+<br><br><strong>Low cost of equity and undervalued:</strong> This scenario presents a potentially attractive opportunity for investors. The asset is undervalued, meaning its current market price is lower than its intrinsic value, which could provide a margin of safety for investors. The low cost of equity could also help boost returns in the short term. Over the long term, as the market recognizes the asset's true value, the price could rise, resulting in higher returns for investors.
+
+<br><br><strong>High cost of equity and overvalued:</strong> This scenario is potentially problematic for investors. The asset is overvalued, and the high cost of equity could make it difficult to justify the premium price. This could lead to a price correction in the short term, resulting in lower returns for investors.
+
+<br><br><strong>High cost of equity and undervalued:</strong> This scenario presents a potentially attractive opportunity for investors. The asset is undervalued, meaning its current market price is lower than its intrinsic value, which could provide a margin of safety for investors. However, the high cost of equity could result in lower returns in the short term, as investors may be hesitant to pay the premium price. Over the long term, as the market recognizes the asset's true value, the price could rise, resulting in higher returns for investors.
+
+It is important to note that these are general scenarios, and actual returns could vary depending on a variety of factors, including market conditions, industry trends, and company-specific factors. Investors should always conduct their own due diligence and consult with a financial professional before making any investment decisions.</p>
+      </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section class="optionable">
+        <div class="container-fluid">
+            <div class="dropdown-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Optionable/Non-Optionable
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Any</a></li>
+                <li><a class="dropdown-item" href="#">Optionable</a></li>
+                <li><a class="dropdown-item" href="#">Non-Optionable</a></li>
+                </ul>
+            </div><br>
+            <div class="my-image">
+                <p><img src="https://media.warriortrading.com/2016/12/Option-Chain-1.png" alt="image" style="border-radius: 1.5rem 1.5rem 1.5rem 1.5rem; width: 1300px; height:600px;"></p>
+            </div>
+            <p>Optionable stocks offer several advantages to investors, including: <br><br>
+
+        <strong>1.Flexibility:</strong> Optionable stocks provide flexibility to investors as they can buy or sell options contracts that allow them to make profits from the changes in the stock price without owning the actual stock.
+
+        <br><br><strong>2.Potential for increased returns:</strong> Trading options on optionable stocks provides investors with the potential for higher returns than just holding the stock.
+
+        <br><br><strong>3.Risk management:</strong> Options contracts on optionable stocks can also be used as a risk management tool as they allow investors to hedge against potential losses or market volatility.
+
+        <br><br><strong>4.Income generation:</strong> Selling options contracts on optionable stocks can generate income for investors through the collection of premiums, even if the stock price doesn't move significantly.
+
+                        <br><br><strong>5.Diversification:</strong> Optionable stocks provide investors with another way to diversify their portfolio by adding different types of investments with varying levels of risk and potential returns.
+
+        Overall, optionable stocks offer investors greater flexibility, potential for increased returns, risk management, income generation, and diversification, making them a valuable addition to any investment portfolio.</p>
+            <button type="button" class="btn btn-success">Submit</button>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section id="output-1">
+        <div class="container-fluid">
+            <p><strong>Analyzing a sector or industry for investment can be challenging due to complex factors. However, we offer a solution that simplifies the analysis of sectors or industries for investment. Our tools efficiently handle large volumes of data, extracting valuable insights on market trends, economic conditions, and industry performance. Through these tools, you can identify significant industry patterns and sentiment, make predictions about future performance, and present complex data in a user-friendly format. With our data-driven approach, we help you discover investment opportunities and empower you to make well-informed decisions promptly and with certainty.</strong></p>
+            <div class="my-image">
+                <p><img src="https://3.bp.blogspot.com/-B9kKxawsvps/XALFNwUIEkI/AAAAAAAAAYc/VfG5J-i1-p42dEcnkU9VkezDKSAaD2pZACLcBGAs/s1600/Five-Forces-Model-Porter.png" alt="image" style="border-radius: 1.5rem 1.5rem 1.5rem 1.5rem; width: 1300px; height:600px;"></p>
+            </div><br>
+            <h2>Here we go! These are the top Sector to invest in based on your above selected criteria.</h2>
+            <p>Based on your selection, we have thoroughly analyzed the top performing sectors using our advanced algorithm. We have curated a list of sectors that have consistently demonstrated strong performance. This list aims to assist you in making well-informed decisions regarding your investment options. The sectors provided below are ranked based on their valuation metrics:</p>
+            <table class="table table-striped table-hover table-danger">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Sector Ranking</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">FCFF Valuation</th>
+                  <th scope="col">ERM Valuation</th>
+                  <th scope="col">Relative Valuation</th>
+                  <th scope="col">FCFF + Relative</th>
+                  <th scope="col">ERM + Relative</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">#1</th>
+                  <td>Real Estate</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#2</th>
+                  <td>Financial</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#3</th>
+                  <td>Healthcare</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#4</th>
+                  <td>Energy</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#5</th>
+                  <td>Utilities</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#6</th>
+                  <td>Consumer Staples</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#7</th>
+                  <td>Consumer Discretionary</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#8</th>
+                  <td>Industrial</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#9</th>
+                  <td>Conglomerates</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#10</th>
+                  <td>Communication Services</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div class="row">
+                <div class="dropdown-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose a Sector
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Consumer Staple</a></li>
+                    <li><a class="dropdown-item" href="#">Financial</a></li>
+                    <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="#">Real State</a></li>
+                    <li><a class="dropdown-item" href="#">Energy</a></li>
+                    </ul>
+                </div><br>
+                <button type="button" class="btn btn-success">-> Submit</button>
+            </div><br>
+            <p>The following information provides an overview of the current rankings within the industry specific to your preferred sector.</p>
+            <table class="table table-striped table-hover table-danger">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Industry Ranking</th>
+                  <th scope="col">Industry Name</th>
+                  <th scope="col">Sector</th>
+                  <th scope="col">FCFF Valuation</th>
+                  <th scope="col">ERM Valuation</th>
+                  <th scope="col">Relative Valuation</th>
+                  <th scope="col">FCFF + Relative</th>
+                  <th scope="col">ERM + Relative</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">#1</th>
+                  <td>Consumer Finance</td>
+                  <td>Financial</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#2</th>
+                  <td>Banks</td>
+                  <td>Financial</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#3</th>
+                  <td>Metals</td>
+                  <td>Metals & Mining</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#4</th>
+                  <td>Retail Stores</td>
+                  <td>Consumer Staples</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#5</th>
+                  <td>Semiconductor</td>
+                  <td>Technology</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#6</th>
+                  <td>Gold</td>
+                  <td>Metals & Minings</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#7</th>
+                  <td>Silver</td>
+                  <td>Metals & Minings</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#8</th>
+                  <td>Aluminium</td>
+                  <td>Metals & Minings</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#9</th>
+                  <td>Media</td>
+                  <td>Communication Services</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#10</th>
+                  <td>Entertainment</td>
+                  <td>Communication Services</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+              </tbody>
+            </table><br>
+            <div class="row">
+                <div class="dropdown-center">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose an Industry
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Any</a></li>
+                    <li><a class="dropdown-item" href="#">Technology</a></li>
+                    <li><a class="dropdown-item" href="#">Finance</a></li>
+                    <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="#">Retail</a></li>
+                    <li><a class="dropdown-item" href="#">Energy</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-success">-> Get Your Investments</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section id="output-2">
+        <div class="container-fluid">
+            <h2>Your AMASSING investment ideas are here !</h2>
+            <table class="table table-striped table-hover table-danger">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Company Ranking</th>
+                  <th scope="col">Ticker</th>
+                  <th scope="col">Sector</th>
+                  <th scope="col">Industry</th>
+                  <th scope="col">Current Price</th>
+                  <th scope="col">Market Cap</th>
+                  <th scope="col">FCFF Valuation</th>
+                  <th scope="col">ERM Valuation</th>
+                  <th scope="col">Relative Valuation</th>
+                  <th scope="col">FCFF + Relative</th>
+                  <th scope="col">ERM + Relative</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">#1</th>
+                  <td style="color: blue"><a href="">AAPL</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>165</td>
+                  <td>2.25T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#2</th>
+                  <td style="color: blue"><a href="">TSLA</a></td>
+                  <td>Technology</td>
+                  <td>Auto Manufacturer</td>
+                  <td>125</td>
+                  <td>600B</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#3</th>
+                  <td style="color: blue"><a href="">MSFT</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#4</th>
+                  <td style="color: blue"><a href="">AMZN</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#5</th>
+                  <td style="color: blue"><a href="">IBM</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#6</th>
+                  <td style="color: blue"><a href="">SNOW</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#7</th>
+                  <td style="color: blue"><a href="">META</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#8</th>
+                  <td style="color: blue"><a href="">TWTR</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#9</th>
+                  <td style="color: blue"><a href="">TWLO</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">#10</th>
+                  <td style="color: blue"><a href="">CTSH</a></td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+              </tbody>
+            </table><br>
+            <button type="button" class="btn btn-success">Start Amassing Portfolio Builder</button>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section id="portfolio-risk">
+        <div class="container-fluid">
+            <h1>Welcome to Amassing Portfolio Builder !</h1>
+            <div class="dropdown-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Choose Your Portfolio Risk
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Very Low</a></li>
+                    <li><a class="dropdown-item" href="#">Low</a></li>
+                    <li><a class="dropdown-item" href="#">Medium</a></li>
+                    <li><a class="dropdown-item" href="#">High</a></li>
+                    <li><a class="dropdown-item" href="#">Very High</a></li>
+                </ul>
+            </div><br>
+            <p>Our objective is to provide a comprehensive framework for assessing and managing the risk associated with your stock portfolio. In the risk allocation strategy, we have identified five types of risk to provide a comprehensive approach to portfolio management, ranging from very low to very high exposure levels. <br><br>
+
+                1) Starting with the <strong>very low-risk</strong> category, we recommend assigning a 2% weightage to each stock. This cautious allocation ensures a minimal level of exposure to any individual stock, thereby reducing the potential impact of adverse events specific to a particular company or industry. While the returns may be relatively modest, this approach prioritizes capital preservation and stability. <br><br>
+
+                2) For those seeking a <strong>low-risk</strong> portfolio, we suggest allocating a 4% weightage to each stock. This allocation strikes a balance between risk and potential returns, ensuring a diversified approach while allowing for a slightly broader exposure to lucrative opportunities. It provides a level of stability while still maintaining the potential for moderate growth.<br><br>
+                3) Moving towards the <strong>medium-risk</strong> category, we recommend assigning a 6% weightage to each stock. This allocation reflects a moderate level of risk tolerance, allowing for a broader exposure to potentially lucrative opportunities. With a slightly higher allocation, investors can capitalize on favorable market conditions while still maintaining a diversified approach.<br><br>
+                4) For investors with a <strong>high risk</strong> appetite who opt for a high-risk portfolio, we suggest assigning an 8% weightage to each stock. This aggressive allocation implies a willingness to embrace higher volatility and the potential for greater returns. It is important to note that with increased risk, the likelihood of experiencing larger fluctuations in portfolio value also rises. Therefore, investors should carefully consider their risk tolerance and investment objectives before choosing this option. <br><br>
+                5) Finally, for those seeking an <strong>very high-risk</strong> portfolio, we recommend an upper bound exposure of 10% for each stock. This level of risk assumes a significant willingness to embrace volatility and the potential for substantial returns. However, it is essential to approach this category with caution, as the potential for losses is also heightened. <br><br>
+                By incorporating these different risk categories into your portfolio allocation strategy, you can tailor your investment approach to your risk tolerance and financial goals, striking an appropriate balance between risk and reward.
+            </p>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section id="portfolio-investment">
+        <div class="container-fluid">
+            <div class="input-group mb-3">
+              <span class="input-group-text">Enter Your Investment Amount</span>
+              <span class="input-group-text">$</span>
+              <div class="my-input">
+                  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+              </div>
+            </div>
+            <p>To provide a practical example, let's consider a trader with a capital of $100,000 who expresses an interest in a very high-risk portfolio. In this scenario, we would suggest setting aside 20% of the funds as cash reserves, amounting to $20,000. This liquidity buffer ensures that you have readily available funds to seize any immediate opportunities or manage unforeseen circumstances. <br><br>
+
+                With the remaining $80,000, we would construct a portfolio consisting of 10 stocks, carefully selected from diversified industries. This diversification helps mitigate the risk associated with any specific sector or company, enhancing the overall stability of your high-risk portfolio.<br><br>
+
+                By following this approach, you can benefit from a well-defined risk classification framework that aligns with your risk appetite and investment objectives. Our aim is to provide a structured and tailored investment strategy that optimizes the balance between risk and potential returns, ultimately helping you achieve your financial goals.</p>
+            <button type="button" class="btn btn-success">Get Your Portfolio</button>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section id="output-3">
+        <div class="container-fluid">
+            <h2>Here is Your Portfolio !</h2>
+            <table class="table table-striped table-hover table-info">
+              <thead class="table">
+                <tr>
+                  <th scope="col">Portfolio Size</th>
+                  <th scope="col">Portfolio Risk</th>
+                  <th scope="col">Stocks Allocated</th>
+                  <th scope="col">Exposure/Stocks</th>
+                  <th scope="col">Cash In Hand</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">$100,000</th>
+                  <td><a href="">Very High</a></td>
+                  <td>10</td>
+                  <td>10%</td>
+                  <td>$20,000</td>
+                </tr>
+              </tbody>
+            </table><br>
+            <table class="table table-striped table-hover table-danger">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Sl. No.</th>
+                  <th scope="col">Ticker</th>
+                  <th scope="col">Company Industry Ranking</th>
+                  <th scope="col">Exposure</th>
+                  <th scope="col">Sector</th>
+                  <th scope="col">Industry</th>
+                  <th scope="col">Current Price</th>
+                  <th scope="col">Market Cap</th>
+                  <th scope="col">FCFF Valuation</th>
+                  <th scope="col">ERM Valuation</th>
+                  <th scope="col">Relative Valuation</th>
+                  <th scope="col">FCFF + Relative</th>
+                  <th scope="col">ERM + Relative</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td style="color: blue"><a href="">AAPL</a></td>
+                  <td>#1</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>165</td>
+                  <td>2.25T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td style="color: blue"><a href="">TSLA</a></td>
+                  <td>#1</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Auto Manufacturer</td>
+                  <td>125</td>
+                  <td>600B</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td style="color: blue"><a href="">MSFT</a></td>
+                  <td>#1</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td style="color: blue"><a href="">AMZN</a></td>
+                  <td>#2</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td style="color: blue"><a href="">IBM</a></td>
+                  <td>#2</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td style="color: blue"><a href="">SNOW</a></td>
+                  <td>#2</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td style="color: blue"><a href="">META</a></td>
+                  <td>#3</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td style="color: blue"><a href="">TWTR</a></td>
+                  <td>#3</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td style="color: blue"><a href="">BKNG</a></td>
+                  <td>#3</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td style="color: blue"><a href="">GOOG</a></td>
+                  <td>#4</td>
+                  <td>$8000</td>
+                  <td>Technology</td>
+                  <td>Consumer Finance</td>
+                  <td>120</td>
+                  <td>1.85T</td>
+                  <td>210%</td>
+                  <td>170% <strong>(#5)</strong></td>
+                  <td>150% <strong>(#7)</strong></td>
+                  <td>180% <strong>(#1)</strong></td>
+                  <td>160% <strong>(#3)</strong></td>
+                </tr>
+              </tbody>
+            </table><br>
+            <div class="my-image">
+                <p><img src="images/hhh.png" alt="image" style="border-radius: 1.5rem 1.5rem 1.5rem 1.5rem; width: 800px; height:450px;"></p>
+            </div>
+            <button type="button" class="btn btn-success">Get Your Strategy Here</button>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section id="strategy">
+        <div class="container-fluid">
+            <h2>Amassing Portfolio Strategy</h2>
+            <p>In the long term, companies tend to converge towards their intrinsic value. However, it is crucial to have sufficient cash reserves to navigate short-term market fluctuations. Therefore, we employ <strong>Probability-based Technical Analysis</strong> to develop strategies that assist in generating cash flow. By leveraging this approach, we aim to optimize trading decisions and capitalize on opportunities that align with calculated probabilities. This strategy enables us to strike a balance between long-term value appreciation and the ability to withstand short-term market volatility, ultimately contributing to financial stability and growth.</p>
+            <div class="dropdown-center">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Choose a Ticker
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">AMZN</a></li>
+                <li><a class="dropdown-item" href="#">META</a></li>
+                <li><a class="dropdown-item" href="#">AAPL</a></li>
+                <li><a class="dropdown-item" href="#">ZIM</a></li>
+                <li><a class="dropdown-item" href="#">MSFT</a></li>
+                <li><a class="dropdown-item" href="#">IBM</a></li>
+                <li><a class="dropdown-item" href="#">TWLO</a></li>
+                <li><a class="dropdown-item" href="#">TSLA</a></li>
+                <li><a class="dropdown-item" href="#">F</a></li>
+                <li><a class="dropdown-item" href="#">AI</a></li>
+              </ul>
+            </div><br>
+            <div class="my-image">
+                <svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 1255px; min-height: 811px; background-image: none; background-color: transparent;"><defs><filter id="dropShadow"><feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"></feGaussianBlur><feOffset in="blur" dx="3" dy="3" result="offsetBlur"></feOffset><feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feFlood><feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite><feBlend in="SourceGraphic" in2="offsetBlur"></feBlend></filter></defs><g transformOrigin="0 0" transform="scale(1,1)translate(478,235)"><g></g><g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 705 540.5 L 715.5 540.5 L 700 559.5 L 684.5 540.5 L 695 540.5 L 695 -100.5 L 684.5 -100.5 L 700 -119.5 L 715.5 -100.5 L 705 -100.5 Z" fill="#4d4d4d" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="370" y="80" width="240" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 370 80 L 430 80 L 450 100 L 430 120 L 370 120 L 390 100 Z" fill="#ff0000" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 100px; margin-left: 371px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Sell 20%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 430 80 L 530 80 L 550 100 L 530 120 L 430 120 L 450 100 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 100px; margin-left: 431px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-80, TC-8000, <br>Cash-2516, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 530 80 L 580 80 L 600 100 L 580 120 L 530 120 L 550 100 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 100px; margin-left: 531px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>26.1%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="370" y="160" width="230" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 370 160 L 430 160 L 450 180 L 430 200 L 370 200 L 390 180 Z" fill="#009900" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 180px; margin-left: 371px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Buy 25%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 430 160 L 530 160 L 550 180 L 530 200 L 430 200 L 450 180 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 180px; margin-left: 431px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-125, TC-8650, <br>Cash-0, Extra_Cash-650</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 530 160 L 580 160 L 600 180 L 580 200 L 530 200 L 550 180 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 180px; margin-left: 531px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>-26.35%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="370" y="-80" width="240" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 370 -80 L 430 -80 L 450 -60 L 430 -40 L 370 -40 L 390 -60 Z" fill="#ff0000" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-60" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 0px; margin-left: 371px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Sell 20%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 430 -80 L 530 -80 L 550 -60 L 530 -40 L 430 -40 L 450 -60 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-60" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 0px; margin-left: 431px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-51, TC-8000, <br>Cash-6527, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 530 -80 L 580 -80 L 600 -60 L 580 -40 L 530 -40 L 550 -60 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-60" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 0px; margin-left: 531px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>93.6%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="370" y="0" width="230" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 370 0 L 430 0 L 450 20 L 430 40 L 370 40 L 390 20 Z" fill="#009900" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 20px; margin-left: 371px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Buy 25%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 430 0 L 530 0 L 550 20 L 530 40 L 430 40 L 450 20 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 20px; margin-left: 431px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-80, TC-8000, <br>Cash-2728, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 530 0 L 580 0 L 600 20 L 580 40 L 530 40 L 550 20 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 20px; margin-left: 531px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>28.76%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="370" y="400" width="240" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 370 400 L 430 400 L 450 420 L 430 440 L 370 440 L 390 420 Z" fill="#ff0000" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 420px; margin-left: 371px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Sell 20%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 430 400 L 530 400 L 550 420 L 530 440 L 430 440 L 450 420 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 420px; margin-left: 431px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-125, TC-10615, <br>Cash-1579, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 530 400 L 580 400 L 600 420 L 580 440 L 530 440 L 550 420 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 420px; margin-left: 531px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>-25.1%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="370" y="480" width="230" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 370 480 L 430 480 L 450 500 L 430 520 L 370 520 L 390 500 Z" fill="#009900" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 500px; margin-left: 371px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Buy 25%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 430 480 L 530 480 L 550 500 L 530 520 L 430 520 L 450 500 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 500px; margin-left: 431px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-195, TC-11685, <br>Cash-0, Extra_Cash-1070</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 530 480 L 580 480 L 600 500 L 580 520 L 530 520 L 550 500 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 500px; margin-left: 531px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>-54.2%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="370" y="240" width="240" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 370 240 L 430 240 L 450 260 L 430 280 L 370 280 L 390 260 Z" fill="#ff0000" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 260px; margin-left: 371px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Sell 20%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 430 240 L 530 240 L 550 260 L 530 280 L 430 280 L 450 260 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 260px; margin-left: 431px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-80, TC-9400, <br>Cash-3712, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 530 240 L 580 240 L 600 260 L 580 280 L 530 280 L 550 260 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 260px; margin-left: 531px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>20.04%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="370" y="320" width="230" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 370 320 L 430 320 L 450 340 L 430 360 L 370 360 L 390 340 Z" fill="#009900" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 340px; margin-left: 371px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Buy 25%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 430 320 L 530 320 L 550 340 L 530 360 L 430 360 L 450 340 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 340px; margin-left: 431px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-125, TC-9400, <br>Cash-546, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 530 320 L 580 320 L 600 340 L 580 360 L 530 360 L 550 340 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 340px; margin-left: 531px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>-26.42%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="90" y="-40" width="240" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 90 -40 L 150 -40 L 170 -20 L 150 0 L 90 0 L 110 -20 Z" fill="#ff0000" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-20" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 0px; margin-left: 91px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Sell 20%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 150 -40 L 250 -40 L 270 -20 L 250 0 L 150 0 L 170 -20 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-20" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 0px; margin-left: 151px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-64, TC-8000, <br>Cash-4243, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 250 -40 L 300 -40 L 320 -20 L 300 0 L 250 0 L 270 -20 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-20" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 0px; margin-left: 251px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>61.2%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="90" y="120" width="230" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 90 120 L 150 120 L 170 140 L 150 160 L 90 160 L 110 140 Z" fill="#009900" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 140px; margin-left: 91px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Buy 25%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 150 120 L 250 120 L 270 140 L 250 160 L 150 160 L 170 140 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 140px; margin-left: 151px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-100, TC-8000, <br>Cash-624, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 250 120 L 300 120 L 320 140 L 300 160 L 250 160 L 270 140 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 140px; margin-left: 251px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>-1.2%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="90" y="280" width="240" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 90 280 L 150 280 L 170 300 L 150 320 L 90 320 L 110 300 Z" fill="#ff0000" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 300px; margin-left: 91px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Sell 20%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 150 280 L 250 280 L 270 300 L 250 320 L 150 320 L 170 300 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 300px; margin-left: 151px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-100, TC-9400, <br>Cash-1820, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 250 280 L 300 280 L 320 300 L 300 320 L 250 320 L 270 300 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 300px; margin-left: 251px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>-3.19%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="90" y="440" width="230" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 90 440 L 150 440 L 170 460 L 150 480 L 90 480 L 110 460 Z" fill="#009900" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 460px; margin-left: 91px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Buy 25%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 150 440 L 250 440 L 270 460 L 250 480 L 150 480 L 170 460 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 460px; margin-left: 151px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-156, TC-10615, <br>Cash-0, Extra_Cash-1215</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 250 440 L 300 440 L 320 460 L 300 480 L 250 480 L 270 460 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 460px; margin-left: 251px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>-42.39%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-190" y="40" width="240" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -190 40 L -130 40 L -110 60 L -130 80 L -190 80 L -170 60 Z" fill="#ff0000" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 60px; margin-left: -189px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Sell 20%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -130 40 L -30 40 L -10 60 L -30 80 L -130 80 L -110 60 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 60px; margin-left: -129px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-80, TC-8000, <br>Cash-2080, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -30 40 L 20 40 L 40 60 L 20 80 L -30 80 L -10 60 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 60px; margin-left: -29px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>30%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-190" y="360" width="230" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -190 360 L -130 360 L -110 380 L -130 400 L -190 400 L -170 380 Z" fill="#009900" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 380px; margin-left: -189px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Buy 25%<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -130 360 L -30 360 L -10 380 L -30 400 L -130 400 L -110 380 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 380px; margin-left: -129px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-125, TC-9400, <br>Cash-0, Extra_Cash-1400</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -30 360 L 20 360 L 40 380 L 20 400 L -30 400 L -10 380 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 380px; margin-left: -29px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>-25.53%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-470" y="200" width="230" height="40" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -470 200 L -410 200 L -390 220 L -410 240 L -470 240 L -450 220 Z" fill="#ffff00" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 220px; margin-left: -469px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;">Buy 100<br>shares</font></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -410 200 L -310 200 L -290 220 L -310 240 L -410 240 L -390 220 Z" fill="#d4e1f5" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 220px; margin-left: -409px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color); font-size: 8px;">shares-100, TC-8000, <br>Cash-0, Extra_Cash-0</i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -310 200 L -260 200 L -240 220 L -260 240 L -310 240 L -290 220 Z" fill="#66b2ff" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 220px; margin-left: -309px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i style="border-color: var(--border-color);"><font style="border-color: var(--border-color); font-size: 11px;"><b style="border-color: var(--border-color);">Return <br>0%</b></font></i></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -240 220 L -220 220 L -220 60 L -176.37 60" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M -240 220 L -220 220 L -220 60 L -176.37 60" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M -171.12 60 L -178.12 63.5 L -176.37 60 L -178.12 56.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -240 220 L -220 220 L -220 380 L -176.37 380" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M -240 220 L -220 220 L -220 380 L -176.37 380" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M -171.12 380 L -178.12 383.5 L -176.37 380 L -178.12 376.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 40 60 L 60 60 L 60 -20 L 103.63 -20" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 40 60 L 60 60 L 60 -20 L 103.63 -20" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 108.88 -20 L 101.88 -16.5 L 103.63 -20 L 101.88 -23.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 40 60 L 60 60 L 60 140 L 103.63 140" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 40 60 L 60 60 L 60 140 L 103.63 140" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 108.88 140 L 101.88 143.5 L 103.63 140 L 101.88 136.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 40 380 L 60 380 L 60 300 L 103.63 300" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 40 380 L 60 380 L 60 300 L 103.63 300" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 108.88 300 L 101.88 303.5 L 103.63 300 L 101.88 296.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 40 380 L 60 380 L 60 460 L 103.63 460" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 40 380 L 60 380 L 60 460 L 103.63 460" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 108.88 460 L 101.88 463.5 L 103.63 460 L 101.88 456.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 320 -20 L 345 -20 L 345 -60 L 383.63 -60" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 320 -20 L 345 -20 L 345 -60 L 383.63 -60" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 388.88 -60 L 381.88 -56.5 L 383.63 -60 L 381.88 -63.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 320 -20 L 345 -20 L 345 20 L 383.63 20" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 320 -20 L 345 -20 L 345 20 L 383.63 20" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 388.88 20 L 381.88 23.5 L 383.63 20 L 381.88 16.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 320 140 L 345 140 L 345 100 L 383.63 100" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 320 140 L 345 140 L 345 100 L 383.63 100" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 388.88 100 L 381.88 103.5 L 383.63 100 L 381.88 96.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 320 140 L 345 140 L 345 180 L 383.63 180" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 320 140 L 345 140 L 345 180 L 383.63 180" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 388.88 180 L 381.88 183.5 L 383.63 180 L 381.88 176.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 320 300 L 345 300 L 345 260 L 383.63 260" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 320 300 L 345 300 L 345 260 L 383.63 260" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 388.88 260 L 381.88 263.5 L 383.63 260 L 381.88 256.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 320 300 L 345 300 L 345 340 L 383.63 340" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 320 300 L 345 300 L 345 340 L 383.63 340" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 388.88 340 L 381.88 343.5 L 383.63 340 L 381.88 336.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 320 460 L 345 460 L 345 420 L 383.63 420" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 320 460 L 345 460 L 345 420 L 383.63 420" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 388.88 420 L 381.88 423.5 L 383.63 420 L 381.88 416.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 320 460 L 345 460 L 345 500 L 383.63 500" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 320 460 L 345 460 L 345 500 L 383.63 500" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 388.88 500 L 381.88 503.5 L 383.63 500 L 381.88 496.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 600 -60 L 620 -60 L 620 -220 L 700 -220 L 700 -206.37" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 600 -60 L 620 -60 L 620 -220 L 700 -220 L 700 -206.37" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 700 -201.12 L 696.5 -208.12 L 700 -206.37 L 703.5 -208.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 600 20 L 620 20 L 623.63 20" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 600 20 L 620 20 L 623.63 20" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 628.88 20 L 621.88 23.5 L 623.63 20 L 621.88 16.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 600 100 L 623.63 100" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 600 100 L 623.63 100" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 628.88 100 L 621.88 103.5 L 623.63 100 L 621.88 96.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 600 180 L 623.63 180" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 600 180 L 623.63 180" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 628.88 180 L 621.88 183.5 L 623.63 180 L 621.88 176.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 600 260 L 623.63 260" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 600 260 L 623.63 260" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 628.88 260 L 621.88 263.5 L 623.63 260 L 621.88 256.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 600 340 L 623.63 340" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 600 340 L 623.63 340" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 628.88 340 L 621.88 343.5 L 623.63 340 L 621.88 336.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 600 420 L 623.63 420" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 600 420 L 623.63 420" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 628.88 420 L 621.88 423.5 L 623.63 420 L 621.88 416.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 600 500 L 623.63 500" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 600 500 L 623.63 500" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 628.88 500 L 621.88 503.5 L 623.63 500 L 621.88 496.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -250 125 C -258 125 -260 130 -253.6 131 C -260 133.2 -252.8 138 -247.6 136 C -244 140 -232 140 -228 136 C -220 136 -220 132 -225 130 C -220 126 -228 122 -235 124 C -240 121 -248 121 -250 125 Z" fill="rgb(255, 255, 255)" stroke="#009900" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 130px; margin-left: -259px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 30 5 C 22 5 20 10 26.4 11 C 20 13.2 27.2 18 32.4 16 C 36 20 48 20 52 16 C 60 16 60 12 55 10 C 60 6 52 2 45 4 C 40 1 32 1 30 5 Z" fill="rgb(255, 255, 255)" stroke="#009900" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 10px; margin-left: 21px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 315 -55 C 307 -55 305 -50 311.4 -49 C 305 -46.8 312.2 -42 317.4 -44 C 321 -40 333 -40 337 -44 C 345 -44 345 -48 340 -50 C 345 -54 337 -58 330 -56 C 325 -59 317 -59 315 -55 Z" fill="rgb(255, 255, 255)" stroke="#009900" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-50" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 0px; margin-left: 306px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 315 105 C 307 105 305 110 311.4 111 C 305 113.2 312.2 118 317.4 116 C 321 120 333 120 337 116 C 345 116 345 112 340 110 C 345 106 337 102 330 104 C 325 101 317 101 315 105 Z" fill="rgb(255, 255, 255)" stroke="#009900" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 110px; margin-left: 306px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 315 265 C 307 265 305 270 311.4 271 C 305 273.2 312.2 278 317.4 276 C 321 280 333 280 337 276 C 345 276 345 272 340 270 C 345 266 337 262 330 264 C 325 261 317 261 315 265 Z" fill="rgb(255, 255, 255)" stroke="#009900" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 270px; margin-left: 306px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 315 425 C 307 425 305 430 311.4 431 C 305 433.2 312.2 438 317.4 436 C 321 440 333 440 337 436 C 345 436 345 432 340 430 C 345 426 337 422 330 424 C 325 421 317 421 315 425 Z" fill="rgb(255, 255, 255)" stroke="#009900" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 430px; margin-left: 306px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -250 305 C -258 305 -260 310 -253.6 311 C -260 313.2 -252.8 318 -247.6 316 C -244 320 -232 320 -228 316 C -220 316 -220 312 -225 310 C -220 306 -228 302 -235 304 C -240 301 -248 301 -250 305 Z" fill="rgb(255, 255, 255)" stroke="#ff0000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 310px; margin-left: -259px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">-30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 30 325 C 22 325 20 330 26.4 331 C 20 333.2 27.2 338 32.4 336 C 36 340 48 340 52 336 C 60 336 60 332 55 330 C 60 326 52 322 45 324 C 40 321 32 321 30 325 Z" fill="rgb(255, 255, 255)" stroke="#009900" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 330px; margin-left: 21px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 30 435 C 22 435 20 440 26.4 441 C 20 443.2 27.2 448 32.4 446 C 36 450 48 450 52 446 C 60 446 60 442 55 440 C 60 436 52 432 45 434 C 40 431 32 431 30 435 Z" fill="rgb(255, 255, 255)" stroke="#ff0000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 440px; margin-left: 21px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">-30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 315 485 C 307 485 305 490 311.4 491 C 305 493.2 312.2 498 317.4 496 C 321 500 333 500 337 496 C 345 496 345 492 340 490 C 345 486 337 482 330 484 C 325 481 317 481 315 485 Z" fill="rgb(255, 255, 255)" stroke="#ff0000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 490px; margin-left: 306px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">-30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 30 105 C 22 105 20 110 26.4 111 C 20 113.2 27.2 118 32.4 116 C 36 120 48 120 52 116 C 60 116 60 112 55 110 C 60 106 52 102 45 104 C 40 101 32 101 30 105 Z" fill="rgb(255, 255, 255)" stroke="#ff0000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 110px; margin-left: 21px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">-30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 315 5 C 307 5 305 10 311.4 11 C 305 13.2 312.2 18 317.4 16 C 321 20 333 20 337 16 C 345 16 345 12 340 10 C 345 6 337 2 330 4 C 325 1 317 1 315 5 Z" fill="rgb(255, 255, 255)" stroke="#ff0000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 10px; margin-left: 306px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">-30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 315 165 C 307 165 305 170 311.4 171 C 305 173.2 312.2 178 317.4 176 C 321 180 333 180 337 176 C 345 176 345 172 340 170 C 345 166 337 162 330 164 C 325 161 317 161 315 165 Z" fill="rgb(255, 255, 255)" stroke="#ff0000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 170px; margin-left: 306px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">-30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 315 325 C 307 325 305 330 311.4 331 C 305 333.2 312.2 338 317.4 336 C 321 340 333 340 337 336 C 345 336 345 332 340 330 C 345 326 337 322 330 324 C 325 321 317 321 315 325 Z" fill="rgb(255, 255, 255)" stroke="#ff0000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 330px; margin-left: 306px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 8px;">-30%</font></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-385" y="176" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="-385" y="176" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 191px; margin-left: -384px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>AMZN@80</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-110" y="16" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="-110" y="16" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 31px; margin-left: -109px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@104</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="170" y="-64" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="170" y="-64" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-49" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 0px; margin-left: 171px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@135.2</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="455" y="-104" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="455" y="-104" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-89" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 0px; margin-left: 456px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@175.76</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="455" y="-25" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="455" y="-25" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-10" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 0px; margin-left: 456px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@94.64</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-110" y="336" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="-110" y="336" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 351px; margin-left: -109px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@56</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="170" y="96" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="170" y="96" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 111px; margin-left: 171px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@72.8</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="455" y="56" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="455" y="56" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 71px; margin-left: 456px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@94.64</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="455" y="136" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="455" y="136" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 151px; margin-left: 456px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@50.96</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="170" y="256" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="170" y="256" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 271px; margin-left: 171px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@72.8</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="170" y="416" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="170" y="416" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 431px; margin-left: 171px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@39.2</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="455" y="215" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="455" y="215" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 230px; margin-left: 456px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@94.64</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="455" y="296" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="455" y="296" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 311px; margin-left: 456px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@50.96</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="455" y="376" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="455" y="376" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 391px; margin-left: 456px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@50.96</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="455" y="456" width="60" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="455" y="456" width="60" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 471px; margin-left: 456px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>@27.44</b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="640" y="-200" width="120" height="80" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="640" y="-180" width="120" height="60" fill="#ff6666" stroke="rgb(0, 0, 0)" pointer-events="all"></rect><path d="M 652 -180 L 652 -120 M 748 -180 L 748 -120" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 652 -180 L 652 -120 M 748 -180 L 748 -120" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-150" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 94px; height: 1px; padding-top: 0px; margin-left: 653px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><b>INTRINSIC VALUATION<br>@250<br></b></div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="640" y="-200" width="120" height="20" rx="3" ry="3" fill="#66b2ff" stroke="rgb(0, 0, 0)" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" y="-190" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 0px; margin-left: 641px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><i><font style="font-size: 12px;"><b>Return- 140.96%</b></font></i></div></div></div></foreignObject></g></g></g><g></g><g></g></g></svg>
+            </div>
+            <p>
+
+                A trading strategy that combines probability-based technical analysis can offer certain advantages and risks. Here are some key points to consider: <br>
+
+                Advantages:
+
+                <br><br><strong>Objective decision-making:</strong>Probability-based technical analysis relies on quantifiable data and statistical probabilities, which can help traders make more objective and systematic decisions. This approach reduces the influence of emotions and biases, leading to more disciplined trading.
+
+                <br><br><strong>Risk management:</strong> By incorporating probability-based analysis, traders can focus on managing risk effectively. They can set specific entry and exit points based on calculated probabilities, helping them to generate cash in the short term.
+
+                <br><br><strong>Backtesting and optimization:</strong> Probability-based technical analysis lends itself well to backtesting and optimization. Traders can use historical data to test the viability of their strategies, refine their parameters, and assess their potential performance before risking real capital.
+
+                <br><br><strong>Consistency:</strong> Probability-based analysis encourages traders to follow a consistent approach based on data and probabilities. This consistency can help traders avoid impulsive or random trades, improving their overall trading performance over time.
+
+                <br><br><strong>Using Implied Volatility instead of Historical(only for Optionable tickers):</strong>
+
+                <br><br><strong>Forward-looking information:</strong> Implied volatility reflects the market's expectations of future price fluctuations. By incorporating implied volatility in probability-based analysis, traders can gain insights into market sentiment and expectations. This forward-looking information can be valuable for anticipating potential price movements and adjusting trading strategies accordingly.
+
+                <br><br><strong>Real-time market perception:</strong> Implied volatility is derived from options prices, which are continually updated in real-time. By considering implied volatility, traders can gauge the market's current perception of risk and uncertainty. This information can be particularly useful during periods of high market volatility or in anticipation of significant news events.
+
+                <br><br><strong>Flexibility across different market conditions:</strong> Implied volatility allows traders to adapt their strategies to different market conditions. By analyzing changes in implied volatility, traders can identify periods of heightened or subdued market expectations. This adaptability enables traders to adjust their trading approach, position sizing, and risk management strategies to suit the prevailing market sentiment.
+
+
+                <br><br><br><br><strong>Risks:</strong>
+
+                <br><br><strong>Imperfect predictions:</strong> While probability-based analysis provides statistical insights, it does not guarantee accurate predictions. The market can always deviate from the anticipated probabilities due to unforeseen events, changes in market sentiment, or unexpected news. Traders should be prepared for potential errors in their predictions and have contingency plans in place.
+
+                <br><br><strong>Market expectations may be incorrect:</strong> Implied volatility is based on market participants' expectations and perceptions, which can be influenced by a range of factors. These expectations may not always accurately predict future price movements, and the market can deviate from implied volatility forecasts. Traders should be cautious of relying solely on implied volatility and consider other factors in their analysis.
+
+                <br><br>Remember, trading involves inherent risks, and no strategy can guarantee profits. It is crucial to combine probability-based technical analysis with risk management techniques, proper position sizing, and continuous monitoring of market conditions. Additionally, consider seeking advice from financial professionals or conducting further research to refine and adapt your trading strategy.</p>
+            <a class="btn btn-success" href="{{ url_for('portfolio') }}" role="button">Save Portfolio</a>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>© 2022 Company, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+    </section>
+</body>
